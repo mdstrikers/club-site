@@ -4,8 +4,17 @@ function loadHTML(selector, file) {
         .then(data => {
             document.querySelector(selector).innerHTML = data;
             var path = window.location.pathname.substring(1);
-            $('#nav>li>a[href="' + path + '"]').addClass('active');
+            $('.menu>.nav>li>a[href="' + path + '"]').addClass('active');
         });
+}
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "menu") {
+        x.className += " responsive";
+    } else {
+        x.className = "menu";
+    }
 }
 
 loadHTML('#home', 'header.html');

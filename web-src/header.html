@@ -1,18 +1,24 @@
 <header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="container">
         <div class="logo">
             <a href="index.html"><img src="images/strikers/logo-blue.jpg" alt=""></a>
         </div>
         <div class="header">
-            <div class="menu">
+            <div class="menu" id="myTopnav">
                 <a class="toggleMenu" href="#"><img src="images/menu-icon.png" alt="" /> </a>
-                <ul class="nav" id="nav">
+                <ul class="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="capitalcup2025.html">Capital Cup 2025</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <!-- <li><a href="blogs.html">Blogs</a></li> -->
                     <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
                 </ul>
                 <!----start-top-nav-script---->
                 <script type="text/javascript" src="js/responsive-nav.js"></script>
