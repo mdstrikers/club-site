@@ -12,14 +12,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <meta name="keywords" content="MD Strikers, Capital Cup 2026, Cricket Tournament, Sports Club" />
-    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="web-src/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="web-src/css/style.css" rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="web-src/js/jquery-1.11.0.min.js"></script>
     <!---- start-smoth-scrolling---->
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="web-src/js/move-top.js"></script>
+    <script type="text/javascript" src="web-src/js/easing.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
             $(".scroll").click(function (event) {
@@ -126,7 +126,37 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </style>
 </head>
 <body>
-    <div class="head" id="home"></div>
+    <!-- Header Section -->
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="container">
+            <div class="logo">
+                <a href="web-src/index.html"><img src="web-src/images/strikers/logo-blue.jpg" alt="MD Strikers Logo"></a>
+            </div>
+            <div class="header">
+                <div class="menu" id="myTopnav">
+                    <a class="toggleMenu" href="#"><img src="web-src/images/menu-icon.png" alt="" /> </a>
+                    <ul class="nav">
+                        <li><a href="web-src/index.html">Home</a></li>
+                        <li><a href="web-src/about.html">About</a></li>
+                        <li><a href="web-src/capitalcup2025.html">Capital Cup 2025</a></li>
+                        <li class="active"><a href="capitalcup2026.html">Capital Cup 2026</a></li>
+                        <li><a href="web-src/gallery.html">Gallery</a></li>
+                        <li><a href="web-src/contact.html">Contact</a></li>
+                        <li>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!----start-top-nav-script---->
+                    <script type="text/javascript" src="web-src/js/responsive-nav.js"></script>
+                    <!----//End-top-nav-script---->
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </header>
     
     <!-- Main Content - Two Column Layout -->
     <div class="container tournament-content-wrapper">
@@ -138,13 +168,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <p>Welcome to the Capital Cup 2026! MD Strikers Sports Club is proud to host the 40+ Cricket Tournament, bringing together cricket enthusiasts from across the region for an exciting display of sportsmanship and talent.</p>
                     
                     <h2>Tournament Poster</h2>
-                    <img src="images/Capital Cup_Poster_40Plus.png" alt="Capital Cup 2026 Tournament Poster" />
+                    <img src="web-src/images/Capital Cup_Poster_40Plus.png" alt="Capital Cup 2026 Tournament Poster" />
                     
                     <h2>About the Tournament</h2>
                     <p>The Capital Cup 2026 is designed for players aged 40 and above, celebrating the passion and skill of veteran cricketers. This tournament promises competitive matches, great camaraderie, and unforgettable moments on the field.</p>
                     
                     <h2>Chief Guest</h2>
-                    <img src="images/chief-guest.jpeg" alt="Chief Guest" />
+                    <img src="web-src/images/chief-guest.jpeg" alt="Chief Guest" />
                     
                     <h2>Tournament Details</h2>
                     <p>Join us for an action-packed tournament featuring teams from various clubs and regions. Stay tuned for more details about fixtures, venues, and schedules.</p>
@@ -159,16 +189,45 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="right-sidebar-panel">
                     <h3>Previous Tournaments</h3>
                     <ul>
-                        <li><a href="capitalcup2025.html">Capital Cup 2025</a></li>
+                        <li><a href="web-src/capitalcup2025.html">Capital Cup 2025</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     
-    <!--start-footer-->
-    <div class="footer" id="footer"></div>
-    <!--end-footer-->
-    <script src="js/script.js"></script>
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <h3>CONTACT US</h3>
+                <div class="footer-bottom">
+                    <div class="col-md-4 footer-bottom-left">
+                        <img src="web-src/images/msg.png" alt="">
+                    </div>
+                    <div class="col-md-8 footer-bottom-right">
+                        <small>mdstrikersinc@gmail.com</small>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="ftr">
+                    <p> &copy; 2026 MD STRIKERS SPORTS CLUB. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    </footer>
+    
+    <!-- Mobile Menu Script -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu";
+            }
+        }
+    </script>
 </body>
 </html>
